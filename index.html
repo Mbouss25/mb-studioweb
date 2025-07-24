@@ -2,75 +2,77 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MB-StudioWeb.com - En construction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MB-StudioWeb.com - Site en construction</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #111;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+      box-sizing: border-box;
     }
 
-    main {
-      flex: 1;
+    body {
+      height: 100vh;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 40px 20px;
+      padding: 20px;
+    }
+
+    .logo {
+      max-width: 160px;
+      margin-bottom: 30px;
     }
 
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 10px;
     }
 
     p {
-      font-size: 1.2rem;
-      opacity: 0.8;
+      font-size: 1.1rem;
+      color: #f97316;
     }
 
     footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #000;
-      font-size: 0.9rem;
-      color: #ccc;
-    }
-
-    footer a {
-      color: #f97316;
-      text-decoration: none;
+      position: absolute;
+      bottom: 15px;
+      font-size: 0.85rem;
+      color: #888;
     }
 
     @media (max-width: 600px) {
       h1 {
-        font-size: 2rem;
+        font-size: 1.6rem;
       }
 
       p {
         font-size: 1rem;
+      }
+
+      .logo {
+        max-width: 120px;
       }
     }
   </style>
 </head>
 <body>
 
-  <main>
-    <div>
-      <h1>MB-StudioWeb.com</h1>
-      <p>Notre site est en cours de création.<br />Reviens très bientôt pour découvrir nos services de création web !</p>
-    </div>
-  </main>
+  <!-- Remplace ce logo par ton propre logo si tu veux -->
+  <img src="https://mb-studioweb.com/logo.png" alt="Logo MB-StudioWeb" class="logo" onerror="this.style.display='none'" />
+
+  <h1>Site en construction</h1>
+  <p>Reviens bientôt sur MB-StudioWeb.com</p>
 
   <footer>
-    &copy; 2025 <a href="https://mb-studioweb.com">MB-StudioWeb</a>. Tous droits réservés.
+    &copy; 2025 MB-StudioWeb - Tous droits réservés
   </footer>
 
 </body>
